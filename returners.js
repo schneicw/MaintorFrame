@@ -32,7 +32,12 @@ function returning_matches() {
   var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   var newSheet = activeSpreadsheet.insertSheet();
   newSheet.setName("Matches");
-  newSheet.appendRow(['Cotton Sweatshirt XL', 'css004']);
+  newSheet.appendRow(['Mentor', 'Mentee']);
+  for (var key in Matches_Dictionary) {
+    newSheet.appendRow([key, Matches_Dictionary[key]]);
+  }
+
+}
 
   
 }
