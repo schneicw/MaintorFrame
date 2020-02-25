@@ -35,7 +35,7 @@ function generate_name(){
 //****************************************************************
 
 function add_mentee_row(current_sheet, count){
-  var Name = "Mentee Number" + " "  + count.toString();
+  var Name = "Mentee #" + " "  + count.toString();
   var School, Gender, Grade, Gender_Pref, Spanish_Req;
   
   if (Math.random() <= 0.5){
